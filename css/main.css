@@ -1,0 +1,75 @@
+/*TAG'S*/
+/*En el body estoy editando las fuentes, el color de fondo y de la letra en general,
+basado en la página original de Twitter*/
+body {
+  background: #e6ecf0;
+  color: #14171a;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+header > nav > p {
+  color: #657786;
+  display: inline-block;
+  font-weight: 900;
+  padding: 6px;
+}
+
+/*Aqui estoy editando el hover del menu*/
+header > nav > p:hover {
+  color: #D61E80;
+  border-bottom: 2px solid #D61E80;
+  font-weight: 900;
+}
+
+header > nav {
+  display: inline-block;
+}
+
+/*Imagen editada*/
+header > nav > img {
+  border-radius: 50px;
+  display: inline-block;
+  height: 40px;
+  margin: 5px;
+  width: 40px;
+}
+
+/*Estilo para la barra de busqueda de Twitter*/
+header > nav > input {
+  background-color: #f5f8fa;
+  border-radius: 21px;
+  border: 1px solid #e6ecf0;
+  display: block;
+  font-size: 12px;
+  height: 32px;
+  line-height: 16px;
+  padding: 8px 32px 8px 12px;
+  width: 139px;
+}
+
+/*Línea rosa del input*/
+header > nav > input:focus {
+  background-color: white;
+  border-radius: 21px;
+  border: 2px solid #D61E80;
+  outline: none;
+}
+
+/*Dandole margen a los íconos para que queden separados*/
+header > nav > p > i {
+  margin: 4px;
+}
+
+
+/*ID'S*/
+#logo {
+  color: #1DA1F2;
+  display: inline-block;
+}
+
+/*CLASES*/

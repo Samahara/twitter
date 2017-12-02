@@ -3,8 +3,27 @@
   <head lang="es">
     <meta charset="utf-8">
     <title>Twitter</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <!--Encabezado de la página, separé los elementos en grupos para
+  manejarlos mucho mejor, y agregue los íconos-->
+    <header>
+      <nav>
+        <p><i class="fa fa-home" aria-hidden="true"></i>Inicio</p>
+        <p><i class="fa fa-bolt" aria-hidden="true"></i>Momentos</p>
+        <p><i class="fa fa-bell" aria-hidden="true"></i>Notificaciones</p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i>Mensajes</p>
+      </nav>
+      <nav>
+        <i id="logo" class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        <input type="text" name="Busqueda" value="" placeholder="Buscar en Twitter">
+        <img src="assets/images/user-logo.jpg" alt="Photo">
+      </nav>
+    </header>
 
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
