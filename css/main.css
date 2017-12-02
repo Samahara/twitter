@@ -12,6 +12,33 @@ body {
   margin: 0;
 }
 
+header {
+  background: white;
+  height: 49px;
+  position: fixed;
+  width: 100%;
+}
+
+header > nav {
+  display: inline-block;
+  vertical-align: top;
+}
+
+header > nav > button {
+  background: #D61E80;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  margin-right: 60px;
+  padding: 10px 15px;
+}
+
+header > nav > button:hover {
+  background: #C61E80;
+  color: white;
+}
+
 header > nav > p {
   color: #657786;
   display: inline-block;
@@ -26,16 +53,12 @@ header > nav > p:hover {
   font-weight: 900;
 }
 
-header > nav {
-  display: inline-block;
-}
-
 /*Imagen editada*/
 header > nav > img {
   border-radius: 50px;
   display: inline-block;
   height: 40px;
-  margin: 5px;
+  margin: 3px 12px;
   width: 40px;
 }
 
@@ -44,7 +67,7 @@ header > nav > input {
   background-color: #f5f8fa;
   border-radius: 21px;
   border: 1px solid #e6ecf0;
-  display: block;
+  display: inline-block;
   font-size: 12px;
   height: 32px;
   line-height: 16px;
@@ -65,11 +88,25 @@ header > nav > p > i {
   margin: 4px;
 }
 
-
 /*ID'S*/
 #logo {
   color: #1DA1F2;
   display: inline-block;
+  margin-top: 20px;
 }
 
 /*CLASES*/
+/*Flotante izquierda*/
+.f-l {
+  float: left;
+}
+
+/*Flotante derecha*/
+.f-r {
+  float: right;
+}
+
+/*Text align center*/
+.t-a-c {
+  text-align: center;
+}
