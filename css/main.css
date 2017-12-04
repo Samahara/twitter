@@ -91,6 +91,8 @@ header > nav > p > i {
 
 /*ID'S*/
 #counter {
+  background: transparent;
+  border: none;
   color: gray;
   margin-left: 60px;
 }
