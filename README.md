@@ -33,3 +33,11 @@ Si la cantidad de caracteres ingresados (sin dar un enter), supera al tamaño de
 
 Agregar la hora en que se publicó el tweet. En el formato de 24 horas: hh:mm.
 Nota: Para dar formato a la fecha y hora, puedes crear tu propia función o usar una librería como moment.js.
+
+## Pseudo-código
+
+```
+  1. Crear una función en la que el usuario pueda ingresar texto.
+  2.
+  3.
+```

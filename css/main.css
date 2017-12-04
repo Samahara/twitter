@@ -21,6 +21,7 @@ header {
 
 header > nav {
   display: inline-block;
+  margin-left: 50px;
   vertical-align: top;
 }
 
@@ -95,8 +96,111 @@ header > nav > p > i {
   margin-top: 20px;
 }
 
+#message {
+  border: 1px solid #EEA5CC;
+  border-radius: 10px;
+  height: 50px;
+  margin: 10px 0px 0px 50px;
+  resize: none;
+  width: 500px;
+}
+
+#message:focus {
+  border: 2px solid #EEA5CC;
+  border-radius: 10px;
+  height: 118px;
+  outline: none;
+  resize: none;
+}
+
+#section_1 {
+  margin-left: 50px;
+  padding-top: 60px;
+}
+
+#section_1 > div {
+  background: linear-gradient(#EEA5CC, #FAE8F2, white);
+  display: inline-block;
+}
+
+#section_1 > div.info-user {
+  height: 300px;
+  width: 350px;
+}
+
+#section_1 > div > img {
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 72px;
+  margin-left: 20px;
+  margin-top: 110px;
+  width: 72px;
+}
+
+#section_1 > div > p.name {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+  padding-top: 140px;
+}
+
+#section_1 > div > p.name:hover {
+  text-decoration: underline;
+}
+
+#section_1 > div > p.link {
+  color: #B3BCC3;
+  margin: 0px;
+  padding-left: 100px;
+}
+
+#section_1 > div > p.link:hover {
+  text-decoration: underline;
+}
+
+#section_2 {
+  background: #FAE8F2;
+  min-height: 120px;
+  margin-left: 10px;
+  margin-top: 60px;
+  width: 570px;
+}
+
+#twitts_container {
+  background: white;
+  display: block;
+  height: 100%;
+  width: 570px;
+}
+
+#twitts_container > div > p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#twittear {
+  background: #EEA5CC;
+  border: none;
+  border-radius: 15px;
+  color: #FBEEF5;
+  display: block;
+  font-weight: 900;
+  margin: 4px 18px 12px 0px;
+  padding: 10px 15px;
+}
+
+#twittear:hover {
+  background: #EFABCF;
+  outline: none;
+}
+
 /*CLASES*/
-/*Flotante izquierda*/
+/*flotante a la izquierda*/
+.c-b {
+  clear: both;
+}
+
 .f-l {
   float: left;
 }
