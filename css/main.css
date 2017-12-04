@@ -90,6 +90,11 @@ header > nav > p > i {
 }
 
 /*ID'S*/
+#counter {
+  color: gray;
+  margin-left: 60px;
+}
+
 #logo {
   color: #1DA1F2;
   display: inline-block;
