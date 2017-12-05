@@ -187,6 +187,15 @@ header > nav > p > i {
   margin: 10px;
 }
 
+#twitts_container > div > p.name {
+  font-weight: 900;
+}
+
+#twitts_container > div > p.name > span {
+  color: #B3BCC3;
+  font-weight: normal;
+}
+
 #twittear {
   background: #EEA5CC;
   border: none;
@@ -204,11 +213,11 @@ header > nav > p > i {
 }
 
 /*CLASES*/
-/*flotante a la izquierda*/
 .c-b {
   clear: both;
 }
 
+/*flotante a la izquierda*/
 .f-l {
   float: left;
 }
