@@ -5,7 +5,7 @@ var twittsArea = document.getElementById('twitts_container');
 var counter = document.getElementById('counter');
 
 //contador de caracteres
-var counterCharacter = function(){
+var counterCharacter = function() {
   // creando una variable count que inice en 0 y guarde la longitud de la cadena
   // del text area.
   var count = 0;
@@ -54,7 +54,6 @@ var textUser = function(e) {
 
   text.value = ""; //NOTA: NO DEJAR ESPACIOS EN BLANCO PORQUE LO RECONOCE COMO CARACTER
   text.placeholder = "¿Qué está pasando?";
-
 }
 
 text.addEventListener("keyup", counterCharacter);
