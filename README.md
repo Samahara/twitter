@@ -36,8 +36,28 @@ Nota: Para dar formato a la fecha y hora, puedes crear tu propia función o usar
 
 ## Pseudo-código
 
-```
-  1. Crear una función en la que el usuario pueda ingresar texto.
-  2.
-  3.
-```
+--------------------------------------------
+
+1. Maquetar el sitio en HTML con las distintas secciones que requiere indentando correctamente para comprender las relaciones entre cada elemento.
+
+2. Insertar íconos.
+
+3. Dar estilo con el archivo .css realizando comentarios y haciendo uso de buenas prácticas, ordenando por etiquetas, id´s y clases.
+
+4. Generar la interacción con JS:
+  4.1 Crear una funcion que guarde el mensaje de texto que genere el usuario.
+  4.2 Crear un boton para que al hacer click suba el mensaje al formulario.
+  4.2 Crear contenedores para los mensajes que genere el usuario
+  4.3 Crear un contador de caracteres a travez de la funcion var counterCharacter que inicie en cero y guarde la longitud de la cadena para...
+    4.3.1. Identificar cuantos caracteres a ingresado el usuario en el textarea, si:
+        Si pasa los 140 caracteres, deshabilitar el botón y mostrar el contador
+        de caracteres en otro color.
+        Si pasa los 120 caracteres, mostrar el contador con OTRO color.
+        Si pasa los 130 caracteres, mostrar el contador con OTRO color.
+  4.4. Agrandar la textarea conforme al numero de caracteres que contenga el mensaje de texto.
+
+5. Crear elementos en base a la estrutura del HTML.
+  5.1. Darle atributos a los elementos creados.
+
+##Diagrama de Flujo
+![diagrama de flujo](assets/images/Diagrama_flujo_twiterr.jpeg)
