@@ -3,9 +3,47 @@ var text = document.getElementById('message');
 var button = document.getElementById('twittear');
 var twittsArea = document.getElementById('twitts_container');
 var counter = document.getElementById('counter');
+var hours = document.getElementById('hours');
+var minutes = document.getElementById('minutes');
+var apm = document.getElementById('AMPM');
+
+// agregar hora al twitt
+/*var timeTwitt = function() {
+  var time = new Date();
+  var hour = time.getHours();
+  var ampm = "";
+  var minute = time.getMinutes();
+
+  if(hour >= 12){
+    hour = hour - 12;
+    ampm = "PM";
+  }else{
+    ampm = "AM";
+  };
+
+  if(hour === 0){
+    hour = 12;
+  };
+
+  hours.textContent = hour;
+  apm.textContent = ampm;
+
+  if(minute < 10){
+    minute = "0" + minute
+  };
+
+  minutes.textContent = minute;
+}
+*/
 
 // deshabilitar el botton si no hay texto
 var buttonOff = function(e) {
+  /*
+  NOTA: AL BOTON SI SE LE DA CLICK AL INICIO GENERA SOLO
+  UNA VEZ EL MENSAJE, Y EN LOS DEMÁS CASO CUMPLE SU FUNCIÓN.
+  SI SE GENERA TEXTO Y DESPUÉS SE INTENTA HACER CLICK AL BOTON
+  ESTE NO GENERA NINGUN MENSAJE.
+  */
   e.preventDefault();
 
   if(text.value.length === 0){
@@ -44,7 +82,6 @@ var counterCharacter = function() {
     button.style.background = "#D61E80";
     counter.style.color = "gray";
   }
-
 }
 // agrandar la textarea conforme al texto
 var resizeTextArea = function() {
