@@ -3,38 +3,6 @@ var text = document.getElementById('message');
 var button = document.getElementById('twittear');
 var twittsArea = document.getElementById('twitts_container');
 var counter = document.getElementById('counter');
-var hours = document.getElementById('hours');
-var minutes = document.getElementById('minutes');
-var apm = document.getElementById('AMPM');
-
-// agregar hora al twitt
-/*var timeTwitt = function() {
-  var time = new Date();
-  var hour = time.getHours();
-  var ampm = "";
-  var minute = time.getMinutes();
-
-  if(hour >= 12){
-    hour = hour - 12;
-    ampm = "PM";
-  }else{
-    ampm = "AM";
-  };
-
-  if(hour === 0){
-    hour = 12;
-  };
-
-  hours.textContent = hour;
-  apm.textContent = ampm;
-
-  if(minute < 10){
-    minute = "0" + minute
-  };
-
-  minutes.textContent = minute;
-}
-*/
 
 // deshabilitar el botton si no hay texto
 var buttonOff = function(e) {
@@ -91,26 +59,49 @@ var resizeTextArea = function() {
 // crear una función que guarde el mensaje
 var textUser = function(e) {
   e.preventDefault();
+  // dandole hora al twitt
+  var time = new Date();
+  var hour = time.getHours();
+  var ampm = "";
+  var minute = time.getMinutes();
+
+  if(hour >= 12){
+    hour = hour - 12;
+    ampm = "PM";
+  }else{
+    ampm = "AM";
+  };
+
+  if(hour === 0){
+    hour = 12;
+  };
+
+  if(minute < 10){
+    minute = "0" + minute;
+  };
+
   // creando contenedores para los mensajes del usuario
   var messageContainer = document.createElement('div');
   var message = document.createElement('p');
   var userName = document.createElement('p');
   var userCode = document.createElement('span');
+  var twittTime = document.createElement('p')
   //agregando atributos
   userName.className = "name";
   message.innerText = text.value;
   userName.innerText = "CODEHOUND";
   userCode.innerText = " @CODEHOUND";
+  twittTime.innerText = hour + " : " + minute + " " + ampm;
   // agregar los elementos a los elementos existentes
   userName.appendChild(userCode);
   messageContainer.appendChild(userName);
   messageContainer.appendChild(message);
+  messageContainer.appendChild(twittTime);
   twittsArea.appendChild(messageContainer);
 
   text.value = ""; //NOTA: NO DEJAR ESPACIOS EN BLANCO PORQUE LO RECONOCE COMO CARACTER
   text.placeholder = "¿Qué está pasando?";
 }
-
 
 button.addEventListener("click", textUser);
 button.addEventListener("click", buttonOff);
